@@ -45,6 +45,7 @@
             android:textColor="@color/black"
             android:padding="5dp"
             android:textSize="20sp"
+            android:inputType="number"
             android:background="@drawable/edt_back"
             android:hint="Enter words number to skip"/>
 

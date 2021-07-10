@@ -46,8 +46,9 @@ public class MainActivity extends AppCompatActivity {
                    System.out.println("pragraph ==="+inputprocess);
 
                    String status="";
+                   System.out.println("sentance word ==="+inputprocess.split(" ").length);
 
-                    if(inputprocess.split(" ").length>skipwords) {
+                    if(inputprocess.split(" ").length>skipwords+1) {
                         status = reversesentance(inputprocess) + ".";
                     }else{
                         status=inputprocess+".";
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         String name="";
         for(int i=1;i<=skipwords;i++)
         {
-            name=name+" "+words[words.length-i];
+            name=words[words.length-i]+" "+name;
         }
         System.out.println("name===" + name);
 

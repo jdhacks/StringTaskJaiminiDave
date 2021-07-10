@@ -29,6 +29,25 @@
             android:textSize="20sp"
             android:background="@drawable/edt_back"
             android:hint="Enter Input String"/>
+        <TextView
+            android:id="@+id/lblskipword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="Skip Last Words"/>
+        <EditText
+            android:id="@+id/edtskipword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:background="@drawable/edt_back"
+            android:hint="Enter words number to skip"/>
+
         <Button
             android:id="@+id/btnoutput"
             android:layout_width="match_parent"
